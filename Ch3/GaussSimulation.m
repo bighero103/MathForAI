@@ -1,9 +1,10 @@
+clear; clc; close all;
 mu = [0; 0];
 Sigma = [1, 0.5; 0.5, 2];
 rng(1);  % 设置随机种子以确保结果可重复性
 X = mvnrnd(mu, Sigma, 1000);
 % 提取 X 的第一个维度，即 X1
-X1 = X(:, 1);
+X1 = X(:, 1)
 X2 = X(:, 2);
 % 创建一个新的 figure
 figure;
